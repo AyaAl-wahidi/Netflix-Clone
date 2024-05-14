@@ -31,11 +31,11 @@ function ModalMovie({ movie, setShowModal, handleModalClose }) {
         .catch(error => {
             setLoading(false);
             console.error('Error adding movie to database:', error);
-            // Optionally, you can handle the error and display a message to the user
         });
     };
 
     return (
+
         <Modal show={true} onHide={handleModalClose}>
             <Modal.Header closeButton>
                 <Modal.Title>Add to Favorites MovieList</Modal.Title>
