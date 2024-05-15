@@ -1,18 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Nav from 'react-bootstrap/Nav';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Nav, Navbar as BootstrapNavbar } from "react-bootstrap";
+import "./Navbar.css"; 
 
-const Navbar = () => {
-    return (
-        <Nav>
-            <Nav.Item>
-                <Link to="/">Home</Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Link to="/favorites">Favorites</Link>
-            </Nav.Item>
-        </Nav>
-    );
+function Navbar() {
+  return (
+    <BootstrapNavbar>
+      <Nav>
+        <Nav.Item>
+          <Link to="/">Home</Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Link to="/favorites">Favorites</Link>
+        </Nav.Item>
+      </Nav>
+    </BootstrapNavbar>
+  );
 }
 
 export default Navbar;

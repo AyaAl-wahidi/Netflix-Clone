@@ -1,0 +1,21 @@
+.navbar {
+    background-color: #4c29cc; 
+    padding: 1rem;
+    border-bottom: 1px solid #555;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #ccc;
+  }
+  
+  .navbar .active {
+    font-weight: bold;
+  }
+  
