@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 
 const Movie = ({ movie }) => {
     const [showModal, setShowModal] = useState(false);
+    const [comment, setComment] = useState('');
 
     const handleAddToFavorites = () => {
         setShowModal(true);
@@ -32,7 +33,7 @@ const Movie = ({ movie }) => {
                     </Card>
                 </Col>
             </Row>
-            {showModal && <ModalMovie movie={movie} setShowModal={setShowModal} handleModalClose={handleModalClose} />}
+            {showModal && <ModalMovie movie={movie} comment={comment} setComment={setComment} setShowModal={setShowModal} handleModalClose={handleModalClose} />}
         </>
     );
 };
